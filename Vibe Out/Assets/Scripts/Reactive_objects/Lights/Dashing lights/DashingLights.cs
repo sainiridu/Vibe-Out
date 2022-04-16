@@ -10,7 +10,7 @@ public class DashingLights : MonoBehaviour
 
     void Start()
     {
-        Destroy(this.gameObject, 10f);
+        Destroy(this.gameObject, 5f);
     }
     void Update()
     {
