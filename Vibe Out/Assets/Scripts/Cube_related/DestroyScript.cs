@@ -9,7 +9,6 @@ public class DestroyScript : MonoBehaviour
 
     [HideInInspector] public ScoreManager scoreManager;
 
-    [HideInInspector] public int scoreToAdd;
 
     private InstantiateObjects instantiateObjects;
 
@@ -26,7 +25,7 @@ public class DestroyScript : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        scoreToAdd = Random.Range(10, 25);
+
         if (other.gameObject.CompareTag("BlueCube"))
         {
             GameObject blueParticle = Instantiate(m_Blue_Particle_Prefab, other.transform.position, Quaternion.identity, instantiateObjects.transform);
@@ -37,7 +36,16 @@ public class DestroyScript : MonoBehaviour
 
             scoreManager.animator.SetInteger("rand", Random.Range(-2, 2));
 
-            scoreManager.currentScore += scoreToAdd;
+
+            if (gameObject.CompareTag("BlueSaber"))
+            {
+                scoreManager.currentScore += 20;
+            }
+
+            else if (gameObject.CompareTag("RedSaber"))
+            {
+                scoreManager.currentScore += 10;
+            }
 
         }
         else if (other.gameObject.CompareTag("RedCube"))
@@ -50,12 +58,17 @@ public class DestroyScript : MonoBehaviour
 
             scoreManager.animator.SetInteger("rand", Random.Range(-2, 2));
 
-            scoreManager.currentScore += scoreToAdd;
 
+            if (gameObject.CompareTag("RedSaber"))
+            {
+                scoreManager.currentScore += 20;
+            }
+
+            else if (gameObject.CompareTag("BlueSaber"))
+            {
+                scoreManager.currentScore += 10;
+            }
         }
-
-
-
     }
 
 
