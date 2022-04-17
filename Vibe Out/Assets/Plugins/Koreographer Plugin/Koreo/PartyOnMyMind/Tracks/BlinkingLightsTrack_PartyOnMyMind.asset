@@ -14,56 +14,56 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mEventID: BlinkingLightsTrack_PartyOnMyMind
   mEventList:
-  - mStartSample: 1315104
-    mEndSample: 1315104
-  - mStartSample: 1575367
-    mEndSample: 1575367
-  - mStartSample: 2095891
-    mEndSample: 2095891
-  - mStartSample: 2269399
-    mEndSample: 2269399
-  - mStartSample: 2789924
-    mEndSample: 2789924
-  - mStartSample: 2876678
-    mEndSample: 2876678
-  - mStartSample: 4264744
-    mEndSample: 4264744
-  - mStartSample: 4351498
-    mEndSample: 4351498
-  - mStartSample: 4394875
-    mEndSample: 4394875
-  - mStartSample: 4438252
-    mEndSample: 4438252
-  - mStartSample: 4481629
-    mEndSample: 4481629
-  - mStartSample: 4525006
-    mEndSample: 4525006
-  - mStartSample: 4958776
-    mEndSample: 4958776
-  - mStartSample: 5045531
-    mEndSample: 5045531
-  - mStartSample: 5349170
-    mEndSample: 5349170
-  - mStartSample: 5392547
-    mEndSample: 5392547
-  - mStartSample: 5652809
-    mEndSample: 5652809
-  - mStartSample: 5739563
-    mEndSample: 5739563
-  - mStartSample: 6390219
-    mEndSample: 6390219
-  - mStartSample: 6520350
-    mEndSample: 6520350
-  - mStartSample: 7040875
-    mEndSample: 7040875
-  - mStartSample: 7214383
-    mEndSample: 7214383
-  - mStartSample: 7734908
-    mEndSample: 7734908
-  - mStartSample: 7821662
-    mEndSample: 7821662
-  - mStartSample: 9578432
-    mEndSample: 9578432
+  - mStartSample: 1192868
+    mEndSample: 1192868
+  - mStartSample: 1453131
+    mEndSample: 1453131
+  - mStartSample: 1973655
+    mEndSample: 1973655
+  - mStartSample: 2147163
+    mEndSample: 2147163
+  - mStartSample: 2667688
+    mEndSample: 2667688
+  - mStartSample: 2754442
+    mEndSample: 2754442
+  - mStartSample: 4142508
+    mEndSample: 4142508
+  - mStartSample: 4229262
+    mEndSample: 4229262
+  - mStartSample: 4272639
+    mEndSample: 4272639
+  - mStartSample: 4316016
+    mEndSample: 4316016
+  - mStartSample: 4359393
+    mEndSample: 4359393
+  - mStartSample: 4402770
+    mEndSample: 4402770
+  - mStartSample: 4836540
+    mEndSample: 4836540
+  - mStartSample: 4923295
+    mEndSample: 4923295
+  - mStartSample: 5226934
+    mEndSample: 5226934
+  - mStartSample: 5270311
+    mEndSample: 5270311
+  - mStartSample: 5530573
+    mEndSample: 5530573
+  - mStartSample: 5617327
+    mEndSample: 5617327
+  - mStartSample: 6267983
+    mEndSample: 6267983
+  - mStartSample: 6398114
+    mEndSample: 6398114
+  - mStartSample: 6918639
+    mEndSample: 6918639
+  - mStartSample: 7092147
+    mEndSample: 7092147
+  - mStartSample: 7612672
+    mEndSample: 7612672
+  - mStartSample: 7699426
+    mEndSample: 7699426
+  - mStartSample: 9456196
+    mEndSample: 9456196
   _SerializedPayloadTypes: []
   _ColorPayloads: []
   _ColorPayloadIdxs: 

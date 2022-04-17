@@ -34,17 +34,17 @@ public class DestroyScript : MonoBehaviour
 
             Destroy(other.transform.parent.gameObject);
 
-            scoreManager.animator.SetInteger("rand", Random.Range(-2, 2));
+            scoreManager.animator.SetInteger("rand", Random.Range(-2, 3));
 
 
             if (gameObject.CompareTag("BlueSaber"))
             {
-                scoreManager.currentScore += 20;
+                scoreManager.CorrectColorCube();
             }
 
             else if (gameObject.CompareTag("RedSaber"))
             {
-                scoreManager.currentScore += 10;
+                scoreManager.WrongColorCube();
             }
 
         }
@@ -56,17 +56,17 @@ public class DestroyScript : MonoBehaviour
 
             Destroy(other.transform.parent.gameObject);
 
-            scoreManager.animator.SetInteger("rand", Random.Range(-2, 2));
+            scoreManager.animator.SetInteger("rand", Random.Range(-2, 3));
 
 
             if (gameObject.CompareTag("RedSaber"))
             {
-                scoreManager.currentScore += 20;
+                scoreManager.CorrectColorCube();
             }
 
             else if (gameObject.CompareTag("BlueSaber"))
             {
-                scoreManager.currentScore += 10;
+                scoreManager.WrongColorCube();
             }
         }
     }

@@ -10,7 +10,7 @@ public class ScoreManager : MonoBehaviour
 
     public TextMeshProUGUI scoreText;
 
-    [HideInInspector]public Animator animator;
+    [HideInInspector] public Animator animator;
 
     void Start()
     {
@@ -20,5 +20,28 @@ public class ScoreManager : MonoBehaviour
     void Update()
     {
         scoreText.text = currentScore.ToString();
+    }
+
+
+    public void MissedCube()
+    {
+        if (currentScore - 15 >= 0)
+        {
+            currentScore -= 15;
+        }
+        else
+        {
+            currentScore = 0;
+        }
+    }
+
+    public void CorrectColorCube()
+    {
+        currentScore += 25;
+    }
+
+    public void WrongColorCube()
+    {
+        currentScore += 10;
     }
 }
