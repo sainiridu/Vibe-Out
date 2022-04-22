@@ -7,6 +7,8 @@ public class MoveCube : MonoBehaviour
     public Vector3 moveDirection;
 
     public float moveSpeed;
+
+    [Range(1, 10)] public float moveUpBeforeTime;
     private Vector3 upOffset;
     private MusicPlayer musicPlayer;
 
@@ -21,7 +23,7 @@ public class MoveCube : MonoBehaviour
         musicPlayer = FindObjectOfType<MusicPlayer>();
         upOffset = new Vector3(0, 2, 0);
         int going_up_Probability = Random.Range(0, 100);
-        if (going_up_Probability < 30)
+        if (going_up_Probability < 50)
         {
             StartCoroutine(MoveCubeUpwards());
         }
@@ -37,7 +39,7 @@ public class MoveCube : MonoBehaviour
 
     IEnumerator MoveCubeUpwards()
     {
-        yield return new WaitForSeconds(Random.Range(1, musicPlayer.audioOffset - 1));
+        yield return new WaitForSeconds(Random.Range(1, moveUpBeforeTime));
         canGoUp = true;
         yield return new WaitForSeconds(0.3f);
         canGoUp = false;
