@@ -12,9 +12,17 @@ public class DestroyScript : MonoBehaviour
 
     private InstantiateObjects instantiateObjects;
 
+    private SliceSoundManager sliceSoundManager;
+
+
+
 
     void Start()
     {
+        if (FindObjectOfType<SliceSoundManager>() != null)
+        {
+            sliceSoundManager = FindObjectOfType<SliceSoundManager>();
+        }
         StartCoroutine(FindScoreManager());
         instantiateObjects = FindObjectOfType<InstantiateObjects>();
 
@@ -28,6 +36,8 @@ public class DestroyScript : MonoBehaviour
 
         if (other.gameObject.CompareTag("BlueCube"))
         {
+            sliceSoundManager.PlaySliceSound();
+
             GameObject blueParticle = Instantiate(m_Blue_Particle_Prefab, other.transform.position, Quaternion.identity, instantiateObjects.transform);
 
             Destroy(blueParticle, 2f);
@@ -50,6 +60,8 @@ public class DestroyScript : MonoBehaviour
         }
         else if (other.gameObject.CompareTag("RedCube"))
         {
+            sliceSoundManager.PlaySliceSound();
+
             GameObject redParticle = Instantiate(m_Red_Particle_Prefab, other.transform.position, Quaternion.identity, instantiateObjects.transform);
 
             Destroy(redParticle, 2f);
