@@ -24,7 +24,7 @@ public class DestroyExtraCubes : MonoBehaviour
 
             StartCoroutine(cross.ShowCross());
 
-            Destroy(other.transform.parent.gameObject, 5f);
+            Destroy(other.transform.parent.gameObject);
             missedCubes++;
         }
     }

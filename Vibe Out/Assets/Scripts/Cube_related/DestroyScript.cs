@@ -9,10 +9,11 @@ public class DestroyScript : MonoBehaviour
 
     [HideInInspector] public ScoreManager scoreManager;
 
-
+    private Vector3 previousePos;
     private InstantiateObjects instantiateObjects;
 
     private SliceSoundManager sliceSoundManager;
+
 
 
 
@@ -30,55 +31,66 @@ public class DestroyScript : MonoBehaviour
 
 
 
+    void Update()
+    {
+        previousePos = transform.position;
+
+    }
+
 
     private void OnTriggerEnter(Collider other)
     {
-
-        if (other.gameObject.CompareTag("BlueCube"))
+        if (Vector3.Angle(transform.position - previousePos, other.transform.up) > 120 || Vector3.Angle(transform.position - previousePos, -other.transform.up) > 120)
         {
-            sliceSoundManager.PlaySliceSound();
-
-            GameObject blueParticle = Instantiate(m_Blue_Particle_Prefab, other.transform.position, Quaternion.identity, instantiateObjects.transform);
-
-            Destroy(blueParticle, 2f);
-
-            Destroy(other.transform.parent.gameObject);
-
-            scoreManager.animator.SetInteger("rand", Random.Range(-2, 3));
 
 
-            if (gameObject.CompareTag("BlueSaber"))
+            if (other.gameObject.CompareTag("BlueCube"))
             {
-                scoreManager.CorrectColorCube();
+
+                sliceSoundManager.PlaySliceSound();
+
+                GameObject blueParticle = Instantiate(m_Blue_Particle_Prefab, other.transform.position, Quaternion.identity, instantiateObjects.transform);
+
+                Destroy(blueParticle, 2f);
+
+                Destroy(other.transform.parent.gameObject);
+
+                scoreManager.animator.SetInteger("rand", Random.Range(-2, 3));
+
+
+                if (gameObject.CompareTag("BlueSaber"))
+                {
+                    scoreManager.CorrectColorCube();
+                }
+
+                else if (gameObject.CompareTag("RedSaber"))
+                {
+                    scoreManager.WrongColorCube();
+                }
+
             }
-
-            else if (gameObject.CompareTag("RedSaber"))
+            else if (other.gameObject.CompareTag("RedCube"))
             {
-                scoreManager.WrongColorCube();
-            }
+                sliceSoundManager.PlaySliceSound();
 
-        }
-        else if (other.gameObject.CompareTag("RedCube"))
-        {
-            sliceSoundManager.PlaySliceSound();
+                GameObject redParticle = Instantiate(m_Red_Particle_Prefab, other.transform.position, Quaternion.identity, instantiateObjects.transform);
 
-            GameObject redParticle = Instantiate(m_Red_Particle_Prefab, other.transform.position, Quaternion.identity, instantiateObjects.transform);
+                Destroy(redParticle, 2f);
 
-            Destroy(redParticle, 2f);
+                Destroy(other.transform.parent.gameObject);
 
-            Destroy(other.transform.parent.gameObject);
-
-            scoreManager.animator.SetInteger("rand", Random.Range(-2, 3));
+                scoreManager.animator.SetInteger("rand", Random.Range(-2, 3));
 
 
-            if (gameObject.CompareTag("RedSaber"))
-            {
-                scoreManager.CorrectColorCube();
-            }
+                if (gameObject.CompareTag("RedSaber"))
+                {
+                    scoreManager.CorrectColorCube();
+                }
 
-            else if (gameObject.CompareTag("BlueSaber"))
-            {
-                scoreManager.WrongColorCube();
+                else if (gameObject.CompareTag("BlueSaber"))
+                {
+                    scoreManager.WrongColorCube();
+                }
             }
         }
     }
