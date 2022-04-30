@@ -237,7 +237,8 @@ MonoBehaviour:
   m_fontAsset: {fileID: 11400000, guid: 7ef63f53f56d21344b276f95517402ce, type: 2}
   m_sharedMaterial: {fileID: -9141616172096288432, guid: 7ef63f53f56d21344b276f95517402ce,
     type: 2}
-  m_fontSharedMaterials: []
+  m_fontSharedMaterials:
+  - {fileID: -9141616172096288432, guid: 7ef63f53f56d21344b276f95517402ce, type: 2}
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
@@ -1798,7 +1799,8 @@ MonoBehaviour:
   m_fontAsset: {fileID: 11400000, guid: 7ef63f53f56d21344b276f95517402ce, type: 2}
   m_sharedMaterial: {fileID: -9141616172096288432, guid: 7ef63f53f56d21344b276f95517402ce,
     type: 2}
-  m_fontSharedMaterials: []
+  m_fontSharedMaterials:
+  - {fileID: -9141616172096288432, guid: 7ef63f53f56d21344b276f95517402ce, type: 2}
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
@@ -2345,7 +2347,8 @@ MonoBehaviour:
   m_fontAsset: {fileID: 11400000, guid: 7ef63f53f56d21344b276f95517402ce, type: 2}
   m_sharedMaterial: {fileID: -9141616172096288432, guid: 7ef63f53f56d21344b276f95517402ce,
     type: 2}
-  m_fontSharedMaterials: []
+  m_fontSharedMaterials:
+  - {fileID: -9141616172096288432, guid: 7ef63f53f56d21344b276f95517402ce, type: 2}
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
@@ -5120,7 +5123,6 @@ MonoBehaviour:
   - {fileID: 1697192108}
   - {fileID: 505773763}
   - {fileID: 274878293}
-  finetuneOffset: 25
 --- !u!1001 &1657025526
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5647,12 +5649,9 @@ MonoBehaviour:
   Object_Prefabs:
   - {fileID: 8033897061992823527, guid: b23929f84405e9d41b8e8383d6f08ca9, type: 3}
   - {fileID: 387153274471642971, guid: 586a05b84f5547946bc414ff3a5d3312, type: 3}
-  spawn_Locations:
-  - {fileID: 856513011}
-  - {fileID: 2031312556}
-  - {fileID: 2132085101}
-  - {fileID: 1365259662}
-  - {fileID: 716514181}
+  spawn_Transform: []
+  spawn_Transform_Right: []
+  spawn_Transform_Left: []
   spawn_Rotation:
   - 0
   - 90
@@ -6579,6 +6578,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b95d0fda572c4142934a13fc81408c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  eventID: 
+  minRotSpeed: 0
+  maxRotSpeed: 0
 --- !u!1 &4665185048762125459
 GameObject:
   m_ObjectHideFlags: 0

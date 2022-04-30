@@ -14,46 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mEventID: SpawnTrack_PartyOnMyMind
   mEventList:
-  - mStartSample: 69300
-    mEndSample: 69300
-  - mStartSample: 90516
-    mEndSample: 90516
-  - mStartSample: 111324
-    mEndSample: 111324
-  - mStartSample: 129684
-    mEndSample: 129684
-  - mStartSample: 146412
-    mEndSample: 146412
-  - mStartSample: 156204
-    mEndSample: 156204
-  - mStartSample: 177012
-    mEndSample: 177012
-  - mStartSample: 199860
-    mEndSample: 199860
-  - mStartSample: 216180
-    mEndSample: 216180
-  - mStartSample: 231684
-    mEndSample: 231684
-  - mStartSample: 243108
-    mEndSample: 243108
-  - mStartSample: 264324
-    mEndSample: 264324
-  - mStartSample: 285132
-    mEndSample: 285132
-  - mStartSample: 302676
-    mEndSample: 302676
-  - mStartSample: 317364
-    mEndSample: 317364
-  - mStartSample: 329196
-    mEndSample: 329196
-  - mStartSample: 351636
-    mEndSample: 351636
-  - mStartSample: 372444
-    mEndSample: 372444
-  - mStartSample: 389172
-    mEndSample: 389172
-  - mStartSample: 405900
-    mEndSample: 405900
   - mStartSample: 422609
     mEndSample: 422609
   - mStartSample: 465986

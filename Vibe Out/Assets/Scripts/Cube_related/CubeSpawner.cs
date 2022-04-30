@@ -39,53 +39,60 @@ public class CubeSpawner : MonoBehaviour
 
         //Spawn Cubes Randomly
 
-        if (objectDetailsNum >= 01 && objectDetailsNum < 100)
+        if (objectDetailsNum >= 0 && objectDetailsNum < 100)
         {
+            random_Rotation_Select = Random.Range(0, spawn_Rotation.Length);
 
-            if (Object_Prefabs[objectDetailsNum / 10] != null)
-            {
-                spawn_Object = objectDetailsNum / 10;
-            }
-            else
-            {
-                spawn_Object = Random.Range(0, Object_Prefabs.Length);
-            }
-            if (spawn_Transform[objectDetailsNum % 10] != null)
-            {
-                spawn_Location = objectDetailsNum % 10;
-            }
-            else
-            {
-                spawn_Location = Random.Range(0, spawn_Transform.Length);
-            }
-
-            GameObject spawnedCube = Instantiate(Object_Prefabs[spawn_Object], spawn_Transform_Right[spawn_Location].position, Quaternion.identity, this.transform);
+            spawn_Object = objectDetailsNum / 10;
 
 
-            spawnedCube.transform.Find("Cube").gameObject.transform.rotation = Quaternion.Euler(0f, 0f, spawn_Rotation[random_Rotation_Select]);
+            spawn_Location = objectDetailsNum % 10;
+
+
+            GameObject spawnedCube = Instantiate(Object_Prefabs[spawn_Object], spawn_Transform[spawn_Location].position, Quaternion.identity, this.transform);
+
+
+            //spawnedCube.transform.Find("Cube").gameObject.transform.rotation = Quaternion.Euler(0f, 0f, spawn_Rotation[random_Rotation_Select]);
 
 
             spawnedCube.transform.Find("Cube").transform.Find("SpawnLight").gameObject.transform.rotation = Quaternion.Euler(-90, 0, 0);
         }
 
-        else if (objectDetailsNum > 100 && objectDetailsNum < 200)
+        else if (objectDetailsNum >= 100 && objectDetailsNum < 200)
         {
+            random_Rotation_Select = Random.Range(0, spawn_Rotation.Length);
 
-            for (int i = 0; i < Object_Prefabs.Length; i++)
-            {
-
-                // GameObject spawnedCube = Instantiate(Object_Prefabs[0], spawn_Transform_Right[spawn_Location].position, Quaternion.identity, this.transform);
+            spawn_Location = objectDetailsNum % 10;
 
 
-                // spawnedCube.transform.Find("Cube").gameObject.transform.rotation = Quaternion.Euler(0f, 0f, spawn_Rotation[random_Rotation_Select]);
+
+            GameObject spawnedCube = Instantiate(Object_Prefabs[0], spawn_Transform[spawn_Location].position, Quaternion.identity, this.transform);
+
+            //spawnedCube.transform.Find("Cube").gameObject.transform.rotation = Quaternion.Euler(0f, 0f, spawn_Rotation[random_Rotation_Select]);
+
+            spawnedCube.transform.Find("Cube").transform.Find("SpawnLight").gameObject.transform.rotation = Quaternion.Euler(-90, 0, 0);
 
 
-                // spawnedCube.transform.Find("Cube").transform.Find("SpawnLight").gameObject.transform.rotation = Quaternion.Euler(-90, 0, 0);
-            }
+            random_Rotation_Select = Random.Range(0, spawn_Rotation.Length);
+
+            spawn_Location = (objectDetailsNum / 10) % 10;
+
+
+
+            GameObject spawnedCube_1 = Instantiate(Object_Prefabs[1], spawn_Transform[spawn_Location].position, Quaternion.identity, this.transform);
+
+            //spawnedCube_1.transform.Find("Cube").gameObject.transform.rotation = Quaternion.Euler(0f, 0f, spawn_Rotation[random_Rotation_Select]);
+
+            spawnedCube_1.transform.Find("Cube").transform.Find("SpawnLight").gameObject.transform.rotation = Quaternion.Euler(-90, 0, 0);
         }
 
 
+
     }
-
-
 }
+
+
+
+
+
+

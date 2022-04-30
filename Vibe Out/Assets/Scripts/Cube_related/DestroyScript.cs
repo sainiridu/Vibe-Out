@@ -18,6 +18,8 @@ public class DestroyScript : MonoBehaviour
 
 
 
+
+
     void Start()
     {
         if (FindObjectOfType<SliceSoundManager>() != null)
@@ -94,7 +96,6 @@ public class DestroyScript : MonoBehaviour
             }
         }
     }
-
 
     public IEnumerator FindScoreManager()
     {
