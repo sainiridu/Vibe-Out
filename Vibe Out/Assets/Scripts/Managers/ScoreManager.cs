@@ -25,9 +25,9 @@ public class ScoreManager : MonoBehaviour
 
     public void MissedCube()
     {
-        if (currentScore - 15 >= 0)
+        if (currentScore - 50 >= 0)
         {
-            currentScore -= 15;
+            currentScore -= 50;
         }
         else
         {
@@ -37,11 +37,22 @@ public class ScoreManager : MonoBehaviour
 
     public void CorrectColorCube()
     {
-        currentScore += 25;
+        currentScore += 50;
     }
 
     public void WrongColorCube()
     {
-        currentScore += 10;
+        currentScore += 20;
+    }
+    public void WrongDirectionHit()
+    {
+        if (currentScore - 20 >= 0)
+        {
+            currentScore -= 20;
+        }
+        else
+        {
+            currentScore = 0;
+        }
     }
 }

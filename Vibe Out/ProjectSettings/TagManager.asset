@@ -8,6 +8,7 @@ TagManager:
   - BlueCube
   - BlueSaber
   - RedSaber
+  - PointsCanvas
   layers:
   - Default
   - TransparentFX

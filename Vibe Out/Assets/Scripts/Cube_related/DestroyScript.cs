@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class DestroyScript : MonoBehaviour
 {
@@ -13,6 +14,8 @@ public class DestroyScript : MonoBehaviour
     private InstantiateObjects instantiateObjects;
 
     private SliceSoundManager sliceSoundManager;
+
+    private GameObject pointsCanvasText;
 
 
 
@@ -42,59 +45,88 @@ public class DestroyScript : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (Vector3.Angle(transform.position - previousePos, other.transform.up) > 120 || Vector3.Angle(transform.position - previousePos, -other.transform.up) > 120)
+
+
+        if (other.gameObject.CompareTag("BlueCube"))
         {
 
+            sliceSoundManager.PlaySliceSound();
 
-            if (other.gameObject.CompareTag("BlueCube"))
+            GameObject blueParticle = Instantiate(m_Blue_Particle_Prefab, other.transform.position, Quaternion.identity, instantiateObjects.transform);
+
+            Destroy(blueParticle, 2f);
+
+            Destroy(other.transform.parent.gameObject);
+
+            scoreManager.animator.SetInteger("rand", Random.Range(-2, 3));
+
+
+            if (gameObject.CompareTag("BlueSaber"))
             {
-
-                sliceSoundManager.PlaySliceSound();
-
-                GameObject blueParticle = Instantiate(m_Blue_Particle_Prefab, other.transform.position, Quaternion.identity, instantiateObjects.transform);
-
-                Destroy(blueParticle, 2f);
-
-                Destroy(other.transform.parent.gameObject);
-
-                scoreManager.animator.SetInteger("rand", Random.Range(-2, 3));
-
-
-                if (gameObject.CompareTag("BlueSaber"))
+                if (Vector3.Angle(transform.position - previousePos, other.transform.up) > 120 || Vector3.Angle(transform.position - previousePos, -other.transform.up) > 120)
                 {
                     scoreManager.CorrectColorCube();
                 }
 
-                else if (gameObject.CompareTag("RedSaber"))
+                else
                 {
-                    scoreManager.WrongColorCube();
+                    scoreManager.WrongDirectionHit();
                 }
-
             }
-            else if (other.gameObject.CompareTag("RedCube"))
+
+            else if (gameObject.CompareTag("RedSaber"))
             {
-                sliceSoundManager.PlaySliceSound();
-
-                GameObject redParticle = Instantiate(m_Red_Particle_Prefab, other.transform.position, Quaternion.identity, instantiateObjects.transform);
-
-                Destroy(redParticle, 2f);
-
-                Destroy(other.transform.parent.gameObject);
-
-                scoreManager.animator.SetInteger("rand", Random.Range(-2, 3));
-
-
-                if (gameObject.CompareTag("RedSaber"))
-                {
-                    scoreManager.CorrectColorCube();
-                }
-
-                else if (gameObject.CompareTag("BlueSaber"))
+                if (Vector3.Angle(transform.position - previousePos, other.transform.up) > 120 || Vector3.Angle(transform.position - previousePos, -other.transform.up) > 120)
                 {
                     scoreManager.WrongColorCube();
                 }
+                 else
+                {
+                    scoreManager.WrongDirectionHit();
+                }
             }
+
         }
+        else if (other.gameObject.CompareTag("RedCube"))
+        {
+            sliceSoundManager.PlaySliceSound();
+
+            GameObject redParticle = Instantiate(m_Red_Particle_Prefab, other.transform.position, Quaternion.identity, instantiateObjects.transform);
+
+            Destroy(redParticle, 2f);
+
+            Destroy(other.transform.parent.gameObject);
+
+            scoreManager.animator.SetInteger("rand", Random.Range(-2, 3));
+
+
+            if (gameObject.CompareTag("RedSaber"))
+            {
+                if (Vector3.Angle(transform.position - previousePos, other.transform.up) > 120 || Vector3.Angle(transform.position - previousePos, -other.transform.up) > 120)
+                {
+                    scoreManager.CorrectColorCube();
+                }
+
+                else
+                {
+                    scoreManager.WrongDirectionHit();
+                }
+            }
+
+            else if (gameObject.CompareTag("BlueSaber"))
+            {
+                if (Vector3.Angle(transform.position - previousePos, other.transform.up) > 120 || Vector3.Angle(transform.position - previousePos, -other.transform.up) > 120)
+                {
+                    scoreManager.WrongColorCube();
+                }
+                 else
+                {
+                    scoreManager.WrongDirectionHit();
+                }
+            }
+
+        }
+
     }
 
     public IEnumerator FindScoreManager()
