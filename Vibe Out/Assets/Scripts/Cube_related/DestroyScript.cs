@@ -1,21 +1,17 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using TMPro;
 
 public class DestroyScript : MonoBehaviour
 {
     public GameObject m_Blue_Particle_Prefab;
     public GameObject m_Red_Particle_Prefab;
-
-    [HideInInspector] public ScoreManager scoreManager;
-
     private Vector3 previousePos;
+
     private InstantiateObjects instantiateObjects;
-
     private SliceSoundManager sliceSoundManager;
-
-    private GameObject pointsCanvasText;
+   
+    [HideInInspector] public ScoreManager scoreManager;
 
 
 
@@ -25,10 +21,8 @@ public class DestroyScript : MonoBehaviour
 
     void Start()
     {
-        if (FindObjectOfType<SliceSoundManager>() != null)
-        {
-            sliceSoundManager = FindObjectOfType<SliceSoundManager>();
-        }
+        sliceSoundManager = FindObjectOfType<SliceSoundManager>();
+
         StartCoroutine(FindScoreManager());
         instantiateObjects = FindObjectOfType<InstantiateObjects>();
 
@@ -66,6 +60,7 @@ public class DestroyScript : MonoBehaviour
                 if (Vector3.Angle(transform.position - previousePos, other.transform.up) > 120 || Vector3.Angle(transform.position - previousePos, -other.transform.up) > 120)
                 {
                     scoreManager.CorrectColorCube();
+
                 }
 
                 else
@@ -80,7 +75,7 @@ public class DestroyScript : MonoBehaviour
                 {
                     scoreManager.WrongColorCube();
                 }
-                 else
+                else
                 {
                     scoreManager.WrongDirectionHit();
                 }
@@ -119,7 +114,7 @@ public class DestroyScript : MonoBehaviour
                 {
                     scoreManager.WrongColorCube();
                 }
-                 else
+                else
                 {
                     scoreManager.WrongDirectionHit();
                 }

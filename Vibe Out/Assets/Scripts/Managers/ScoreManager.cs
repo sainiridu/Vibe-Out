@@ -7,14 +7,16 @@ public class ScoreManager : MonoBehaviour
 {
     public int totalSpawns;
     public int currentScore;
-
     public TextMeshProUGUI scoreText;
+    private ScoreRatingUI scoreRatingUI;
 
     [HideInInspector] public Animator animator;
 
     void Start()
     {
         animator = scoreText.transform.parent.GetComponent<Animator>();
+
+        scoreRatingUI = FindObjectOfType<ScoreRatingUI>();
     }
 
     void Update()
@@ -25,9 +27,11 @@ public class ScoreManager : MonoBehaviour
 
     public void MissedCube()
     {
-        if (currentScore - 50 >= 0)
+        StartCoroutine(scoreRatingUI.ShowScoreRating("MISSED", new Color32(255, 0, 53, 255)));
+
+        if (currentScore - 150 >= 0)
         {
-            currentScore -= 50;
+            currentScore -= 150;
         }
         else
         {
@@ -37,18 +41,33 @@ public class ScoreManager : MonoBehaviour
 
     public void CorrectColorCube()
     {
-        currentScore += 50;
+        StartCoroutine(scoreRatingUI.ShowScoreRating("GREAT", new Color32(0, 224, 116, 255)));
+        currentScore += 200;
     }
 
     public void WrongColorCube()
     {
-        currentScore += 20;
+        StartCoroutine(scoreRatingUI.ShowScoreRating("HMMM....", new Color32(255, 130, 0, 255)));
+        currentScore += 50;
     }
     public void WrongDirectionHit()
     {
-        if (currentScore - 20 >= 0)
+        StartCoroutine(scoreRatingUI.ShowScoreRating("NOOB", new Color32(255, 252, 97, 255)));
+        if (currentScore - 100 >= 0)
         {
-            currentScore -= 20;
+            currentScore -= 100;
+        }
+        else
+        {
+            currentScore = 0;
+        }
+    }
+
+    public void ObstacleHit()
+    {
+        if (currentScore - 250 >= 0)
+        {
+            currentScore -= 250;
         }
         else
         {

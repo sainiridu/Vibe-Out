@@ -1,0 +1,3 @@
+rep "Vibe Out@ridusaini30@cloud"
+  path "/"
+    smartbranch "/main"
