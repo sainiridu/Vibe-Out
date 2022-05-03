@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -2076007791, guid: aa81bbec85a3f423193272a7c6154986, type: 3}
+  m_Name: Whatever_It_Takes
+  m_EditorClassIdentifier: 
+  mSourceClip: {fileID: 8300000, guid: 2b0991a11764dc94fb19b309c90586c9, type: 3}
+  mAudioFilePath: 
+  mSampleRate: 44100
+  mIgnoreLatencyOffset: 0
+  mTempoSections:
+  - sectionName: Music
+    startSample: 0
+    samplesPerBeat: 19600
+    beatsPerMeasure: 4
+    bStartNewMeasure: 1
+  mTracks:
+  - {fileID: 11400000, guid: 7841dfc8faab0704a8ec6717c9425b7e, type: 2}
+  - {fileID: 11400000, guid: ba06b4d783696b849a695abfc5e2561b, type: 2}
+  - {fileID: 11400000, guid: 47a0953a47b287e469fcee68462eccc0, type: 2}
+  - {fileID: 11400000, guid: 95a617f22a36509438908b28362dbf14, type: 2}
+  - {fileID: 11400000, guid: e4f56fc0aa6bab641b9be91e3564aa2c, type: 2}

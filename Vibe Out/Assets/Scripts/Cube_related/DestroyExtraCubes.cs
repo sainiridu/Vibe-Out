@@ -10,7 +10,7 @@ public class DestroyExtraCubes : MonoBehaviour
 
     void Start()
     {
-        
+
         scoreManager = FindObjectOfType<ScoreManager>();
     }
     private void OnTriggerEnter(Collider other)
@@ -21,6 +21,11 @@ public class DestroyExtraCubes : MonoBehaviour
 
             Destroy(other.transform.parent.gameObject, 2.5f);
             missedCubes++;
+        }
+
+        else if (other.gameObject.CompareTag("Obstacle"))
+        {
+            Destroy(other.gameObject, 5f);
         }
     }
 }

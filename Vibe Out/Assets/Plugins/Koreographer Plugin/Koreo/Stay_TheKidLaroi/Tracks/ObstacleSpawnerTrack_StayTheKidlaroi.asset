@@ -14,30 +14,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mEventID: ObstacleSpawnerTrack_StayTheKidlaroi
   mEventList:
-  - mStartSample: 280164
-    mEndSample: 280164
-  - mStartSample: 295729
-    mEndSample: 295729
-  - mStartSample: 373552
-    mEndSample: 373552
-  - mStartSample: 420247
-    mEndSample: 420247
-  - mStartSample: 498070
-    mEndSample: 498070
-  - mStartSample: 560329
-    mEndSample: 560329
-  - mStartSample: 684847
-    mEndSample: 684847
-  - mStartSample: 747105
-    mEndSample: 747105
-  - mStartSample: 809364
-    mEndSample: 809364
-  - mStartSample: 856058
-    mEndSample: 856058
-  - mStartSample: 965011
-    mEndSample: 965011
+  - mStartSample: 1914458
+    mEndSample: 1914458
+  - mStartSample: 1945588
+    mEndSample: 1945588
+  - mStartSample: 1976717
+    mEndSample: 1976717
   - mStartSample: 3050682
     mEndSample: 3050682
+  - mStartSample: 4404811
+    mEndSample: 4404811
+  - mStartSample: 4435941
+    mEndSample: 4435941
+  - mStartSample: 4467070
+    mEndSample: 4467070
+  - mStartSample: 5541035
+    mEndSample: 5541035
+  - mStartSample: 5665552
+    mEndSample: 5665552
+  - mStartSample: 5790070
+    mEndSample: 5790070
   _SerializedPayloadTypes: []
   _ColorPayloads: []
   _ColorPayloadIdxs: 
