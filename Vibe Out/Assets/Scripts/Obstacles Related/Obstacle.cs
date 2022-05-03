@@ -9,7 +9,7 @@ public class Obstacle : MonoBehaviour
     private ScoreManager scoreManager;
     void Start()
     {
-        audioReverbZone = GetComponent<AudioReverbZone>();
+        audioReverbZone = transform.GetComponentInParent<AudioReverbZone>();
         scoreManager = FindObjectOfType<ScoreManager>();
 
     }
@@ -18,21 +18,24 @@ public class Obstacle : MonoBehaviour
 
         if (other.transform.CompareTag("Player"))
         {
-            audioReverbZone.enabled = true;
+            StartCoroutine(ActivateReverbZone());
 
             scoreManager.ObstacleHit();
         }
 
     }
-
-    void OnTriggerExit(Collider other)
+    IEnumerator ActivateReverbZone()
     {
-
-        if (other.transform.CompareTag("Player"))
+        if (!audioReverbZone.enabled)
         {
-            audioReverbZone.enabled = false;
+            audioReverbZone.enabled = true;
 
-            //scoreManager.ObstacleHit();
+            yield return new WaitForSeconds(5f);
+            audioReverbZone.enabled = false;
+        }
+        else
+        {
+            yield return null;
         }
     }
 }

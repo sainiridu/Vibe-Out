@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1223223985, guid: aa81bbec85a3f423193272a7c6154986, type: 3}
+  m_Name: ObstacleSpawnerTrack_StayTheKidlaroi
+  m_EditorClassIdentifier: 
+  mEventID: ObstacleSpawnerTrack_StayTheKidlaroi
+  mEventList:
+  - mStartSample: 280164
+    mEndSample: 280164
+  - mStartSample: 295729
+    mEndSample: 295729
+  - mStartSample: 373552
+    mEndSample: 373552
+  - mStartSample: 420247
+    mEndSample: 420247
+  - mStartSample: 498070
+    mEndSample: 498070
+  - mStartSample: 560329
+    mEndSample: 560329
+  - mStartSample: 684847
+    mEndSample: 684847
+  - mStartSample: 747105
+    mEndSample: 747105
+  - mStartSample: 809364
+    mEndSample: 809364
+  - mStartSample: 856058
+    mEndSample: 856058
+  - mStartSample: 965011
+    mEndSample: 965011
+  - mStartSample: 3050682
+    mEndSample: 3050682
+  _SerializedPayloadTypes: []
+  _ColorPayloads: []
+  _ColorPayloadIdxs: 
+  _CurvePayloads: []
+  _CurvePayloadIdxs: 
+  _FloatPayloads: []
+  _FloatPayloadIdxs: 
+  _GradientPayloads: []
+  _GradientPayloadIdxs: 
+  _IntPayloads: []
+  _IntPayloadIdxs: 
+  _SpectrumPayloads: []
+  _SpectrumPayloadIdxs: 
+  _TextPayloads: []
+  _TextPayloadIdxs: 

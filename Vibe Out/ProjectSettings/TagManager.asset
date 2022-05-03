@@ -9,6 +9,7 @@ TagManager:
   - BlueSaber
   - RedSaber
   - PointsCanvas
+  - Obstacle
   layers:
   - Default
   - TransparentFX
