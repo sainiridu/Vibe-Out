@@ -11,13 +11,8 @@ public class DashingLightsSpawner : MonoBehaviour
     public GameObject[] dashingCubes;
     public Transform[] dashingCubeSpawnTransform;
 
-    private MusicPlayer musicPlayer;
-
-
     void Awake()
     {
-        musicPlayer = FindObjectOfType<MusicPlayer>();
-
         Koreographer.Instance.RegisterForEvents(eventID, SpawnDashingCubes);
 
 

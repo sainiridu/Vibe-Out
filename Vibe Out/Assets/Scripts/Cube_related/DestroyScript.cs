@@ -16,14 +16,11 @@ public class DestroyScript : MonoBehaviour
 
 
 
-
-
-
     void Start()
     {
         sliceSoundManager = FindObjectOfType<SliceSoundManager>();
-
-        StartCoroutine(FindScoreManager());
+        scoreManager = FindObjectOfType<ScoreManager>();
+        //StartCoroutine(FindScoreManager());
         instantiateObjects = FindObjectOfType<InstantiateObjects>();
 
     }

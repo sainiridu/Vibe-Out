@@ -14,36 +14,70 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mEventID: SpawnTrack_v2.0_Showdown_F.O.O.L
   mEventList:
-  - mStartSample: 1453696
-    mEndSample: 1453696
-  - mStartSample: 2117424
-    mEndSample: 2117424
-  - mStartSample: 2456615
-    mEndSample: 2456615
-  - mStartSample: 2499293
-    mEndSample: 2499293
-  - mStartSample: 2541970
-    mEndSample: 2541970
+  - mStartSample: 1325663
+    mEndSample: 1325663
+  - mStartSample: 1992547
+    mEndSample: 1992547
+  - mStartSample: 2328582
+    mEndSample: 2328582
+  - mStartSample: 2371260
+    mEndSample: 2371260
+  - mStartSample: 2413937
+    mEndSample: 2413937
+  - mStartSample: 2456614
+    mEndSample: 2456614
+  - mStartSample: 2499292
+    mEndSample: 2499292
+  - mStartSample: 2520630
+    mEndSample: 2520630
+  - mStartSample: 2541969
+    mEndSample: 2541969
+  - mStartSample: 2563308
+    mEndSample: 2563308
   - mStartSample: 2584647
     mEndSample: 2584647
-  - mStartSample: 2627325
-    mEndSample: 2627325
+  - mStartSample: 2605985
+    mEndSample: 2605985
+  - mStartSample: 2627324
+    mEndSample: 2627324
   - mStartSample: 2648663
     mEndSample: 2648663
-  - mStartSample: 2670002
-    mEndSample: 2670002
-  - mStartSample: 2691341
-    mEndSample: 2691341
-  - mStartSample: 2712680
-    mEndSample: 2712680
-  - mStartSample: 2734018
-    mEndSample: 2734018
-  - mStartSample: 2755357
-    mEndSample: 2755357
-  - mStartSample: 2776696
-    mEndSample: 2776696
-  - mStartSample: 7537464
-    mEndSample: 7537464
+  - mStartSample: 7409431
+    mEndSample: 7409431
+  - mStartSample: 8090034
+    mEndSample: 8090034
+  - mStartSample: 8431453
+    mEndSample: 8431453
+  - mStartSample: 8474131
+    mEndSample: 8474131
+  - mStartSample: 8516808
+    mEndSample: 8516808
+  - mStartSample: 8559485
+    mEndSample: 8559485
+  - mStartSample: 8602163
+    mEndSample: 8602163
+  - mStartSample: 8623501
+    mEndSample: 8623501
+  - mStartSample: 8644840
+    mEndSample: 8644840
+  - mStartSample: 8666179
+    mEndSample: 8666179
+  - mStartSample: 8687518
+    mEndSample: 8687518
+  - mStartSample: 8708856
+    mEndSample: 8708856
+  - mStartSample: 8730195
+    mEndSample: 8730195
+  - mStartSample: 8751534
+    mEndSample: 8751534
+  - mStartSample: 11482889
+    mEndSample: 11482889
+  - mStartSample: 11853451
+    mEndSample: 11853451
+  - mStartSample: 12176299
+    mEndSample: 12176299
+  - mStartSample: 12828367
+    mEndSample: 12828367
   _SerializedPayloadTypes:
   - SonicBloom.Koreo.IntPayload
   _ColorPayloads: []
@@ -70,7 +104,24 @@ MonoBehaviour:
   - mIntVal: 132
   - mIntVal: 132
   - mIntVal: 132
-  _IntPayloadIdxs: 000000000100000002000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e000000
+  - mIntVal: 132
+  - mIntVal: 141
+  - mIntVal: 150
+  - mIntVal: 141
+  - mIntVal: 132
+  - mIntVal: 123
+  - mIntVal: 114
+  - mIntVal: 132
+  - mIntVal: 141
+  - mIntVal: 132
+  - mIntVal: 132
+  - mIntVal: 132
+  - mIntVal: 132
+  - mIntVal: 150
+  - mIntVal: 141
+  - mIntVal: 132
+  - mIntVal: 132
+  _IntPayloadIdxs: 000000000100000002000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f000000100000001100000012000000130000001400000015000000160000001700000018000000190000001a0000001b0000001c0000001d0000001e0000001f000000
   _SpectrumPayloads: []
   _SpectrumPayloadIdxs: 
   _TextPayloads: []

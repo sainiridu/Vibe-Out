@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1223223985, guid: aa81bbec85a3f423193272a7c6154986, type: 3}
+  m_Name: ObstaclesTrack_PartyOnMyMind
+  m_EditorClassIdentifier: 
+  mEventID: ObstaclesTrack_PartyOnMyMind
+  mEventList:
+  - mStartSample: 3405098
+    mEndSample: 3405098
+  - mStartSample: 4164196
+    mEndSample: 4164196
+  - mStartSample: 5595639
+    mEndSample: 5595639
+  - mStartSample: 5639016
+    mEndSample: 5639016
+  - mStartSample: 5682393
+    mEndSample: 5682393
+  - mStartSample: 8371770
+    mEndSample: 8371770
+  - mStartSample: 8393459
+    mEndSample: 8393459
+  - mStartSample: 8415147
+    mEndSample: 8415147
+  _SerializedPayloadTypes: []
+  _ColorPayloads: []
+  _ColorPayloadIdxs: 
+  _CurvePayloads: []
+  _CurvePayloadIdxs: 
+  _FloatPayloads: []
+  _FloatPayloadIdxs: 
+  _GradientPayloads: []
+  _GradientPayloadIdxs: 
+  _IntPayloads: []
+  _IntPayloadIdxs: 
+  _SpectrumPayloads: []
+  _SpectrumPayloadIdxs: 
+  _TextPayloads: []
+  _TextPayloadIdxs: 

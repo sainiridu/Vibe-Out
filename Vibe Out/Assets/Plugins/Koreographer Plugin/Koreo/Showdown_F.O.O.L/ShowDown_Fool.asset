@@ -30,3 +30,8 @@ MonoBehaviour:
   mTracks:
   - {fileID: 11400000, guid: 2ac0a134bfe0de44d8f10294325326f3, type: 2}
   - {fileID: 11400000, guid: 75a70525759eea644bfeda9eea4efdaa, type: 2}
+  - {fileID: 11400000, guid: 96bef40eaa7b3ef44b8ca2fd6147af1d, type: 2}
+  - {fileID: 11400000, guid: a2f9d4e6fd73dce49a05ac3308650bed, type: 2}
+  - {fileID: 11400000, guid: c0f8f74acd47e7b4787bcad776b910ab, type: 2}
+  - {fileID: 11400000, guid: 14ceb47f95360ee429b42e834043d374, type: 2}
+  - {fileID: 11400000, guid: 103664ea5bd72bc41b72f624df11462e, type: 2}

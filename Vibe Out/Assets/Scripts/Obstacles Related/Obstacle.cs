@@ -8,14 +8,11 @@ public class Obstacle : MonoBehaviour
 {
     public AudioReverbZone audioReverbZone;
 
-    private ScoreManager scoreManager;
-
     private Volume PPvolume;
     void Start()
     {
         audioReverbZone = transform.GetComponentInParent<AudioReverbZone>();
         PPvolume = transform.GetComponentInParent<Volume>();
-        scoreManager = FindObjectOfType<ScoreManager>();
 
     }
     private void OnTriggerEnter(Collider other)
@@ -25,7 +22,7 @@ public class Obstacle : MonoBehaviour
         {
             StartCoroutine(ActivateReverbZone());
 
-            scoreManager.ObstacleHit();
+    
         }
 
     }

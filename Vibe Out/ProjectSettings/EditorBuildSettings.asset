@@ -9,14 +9,17 @@ EditorBuildSettings:
     path: Assets/Scenes/Home/Home.unity
     guid: 5af42be2c78f1a44799aab018d6317d7
   - enabled: 1
+    path: Assets/Scenes/Level Scenes/Scenes/Stay_The_Kid_Laroi.unity
+    guid: bf4c9fd40f1e9554bbde8c3deb78dad8
+  - enabled: 1
     path: Assets/Scenes/Level Scenes/Scenes/Showdown_FOOL.unity
     guid: 145a2a45d7bc746b19cb68410368bf96
   - enabled: 1
     path: Assets/Scenes/Level Scenes/Scenes/Party_On_My_Mind.unity
     guid: f395e8247f2e43a40b0465020e5baae3
   - enabled: 1
-    path: Assets/Scenes/Level Scenes/Scenes/Stay_The_Kid_Laroi.unity
-    guid: bf4c9fd40f1e9554bbde8c3deb78dad8
+    path: Assets/Scenes/Level Scenes/Scenes/WhateverItTakes_ImagineDragons.unity
+    guid: 9babf8ed21c9924429dd5987ee29343f
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: bfa1182bd221b4ca89619141f66f1260,
       type: 2}

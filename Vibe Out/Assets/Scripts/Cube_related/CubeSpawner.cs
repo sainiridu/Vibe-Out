@@ -14,9 +14,6 @@ public class CubeSpawner : MonoBehaviour
 
     [EventID]
     public string eventID;
-    public ScoreManager scoreManager;
-    private bool spawnRight = false;
-    private bool spawnLeft = false;
 
 
 

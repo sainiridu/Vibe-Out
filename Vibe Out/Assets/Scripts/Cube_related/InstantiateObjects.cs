@@ -15,7 +15,6 @@ public class InstantiateObjects : MonoBehaviour
     [EventID]
     public string eventID;
 
-    public ScoreManager scoreManager;
 
 
 
@@ -104,10 +103,6 @@ public class InstantiateObjects : MonoBehaviour
             spawnedCube.transform.Find("Cube").transform.Find("SpawnLight").gameObject.transform.rotation = Quaternion.Euler(-90, 0, 0);
         }
 
-
-
-        //Store total number of spawned cubes
-        scoreManager.totalSpawns++;
 
         spawnRight = false;
         spawnLeft = false;

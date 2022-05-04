@@ -1,0 +1,53 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1223223985, guid: aa81bbec85a3f423193272a7c6154986, type: 3}
+  m_Name: ObstaclesTrack_ShowdownFOOL
+  m_EditorClassIdentifier: 
+  mEventID: ObstaclesTrack_ShowdownFOOL
+  mEventList:
+  - mStartSample: 1453696
+    mEndSample: 1453696
+  - mStartSample: 1624405
+    mEndSample: 1624405
+  - mStartSample: 1795115
+    mEndSample: 1795115
+  - mStartSample: 1965825
+    mEndSample: 1965825
+  - mStartSample: 7556567
+    mEndSample: 7556567
+  - mStartSample: 7663260
+    mEndSample: 7663260
+  - mStartSample: 7748615
+    mEndSample: 7748615
+  - mStartSample: 7833970
+    mEndSample: 7833970
+  - mStartSample: 7919325
+    mEndSample: 7919325
+  - mStartSample: 8004680
+    mEndSample: 8004680
+  - mStartSample: 8090034
+    mEndSample: 8090034
+  _SerializedPayloadTypes: []
+  _ColorPayloads: []
+  _ColorPayloadIdxs: 
+  _CurvePayloads: []
+  _CurvePayloadIdxs: 
+  _FloatPayloads: []
+  _FloatPayloadIdxs: 
+  _GradientPayloads: []
+  _GradientPayloadIdxs: 
+  _IntPayloads: []
+  _IntPayloadIdxs: 
+  _SpectrumPayloads: []
+  _SpectrumPayloadIdxs: 
+  _TextPayloads: []
+  _TextPayloadIdxs: 
