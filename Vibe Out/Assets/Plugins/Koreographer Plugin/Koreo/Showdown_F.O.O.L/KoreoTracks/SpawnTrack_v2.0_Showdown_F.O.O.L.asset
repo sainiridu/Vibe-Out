@@ -1,0 +1,77 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1223223985, guid: aa81bbec85a3f423193272a7c6154986, type: 3}
+  m_Name: SpawnTrack_v2.0_Showdown_F.O.O.L
+  m_EditorClassIdentifier: 
+  mEventID: SpawnTrack_v2.0_Showdown_F.O.O.L
+  mEventList:
+  - mStartSample: 1453696
+    mEndSample: 1453696
+  - mStartSample: 2117424
+    mEndSample: 2117424
+  - mStartSample: 2456615
+    mEndSample: 2456615
+  - mStartSample: 2499293
+    mEndSample: 2499293
+  - mStartSample: 2541970
+    mEndSample: 2541970
+  - mStartSample: 2584647
+    mEndSample: 2584647
+  - mStartSample: 2627325
+    mEndSample: 2627325
+  - mStartSample: 2648663
+    mEndSample: 2648663
+  - mStartSample: 2670002
+    mEndSample: 2670002
+  - mStartSample: 2691341
+    mEndSample: 2691341
+  - mStartSample: 2712680
+    mEndSample: 2712680
+  - mStartSample: 2734018
+    mEndSample: 2734018
+  - mStartSample: 2755357
+    mEndSample: 2755357
+  - mStartSample: 2776696
+    mEndSample: 2776696
+  - mStartSample: 7537464
+    mEndSample: 7537464
+  _SerializedPayloadTypes:
+  - SonicBloom.Koreo.IntPayload
+  _ColorPayloads: []
+  _ColorPayloadIdxs: 
+  _CurvePayloads: []
+  _CurvePayloadIdxs: 
+  _FloatPayloads: []
+  _FloatPayloadIdxs: 
+  _GradientPayloads: []
+  _GradientPayloadIdxs: 
+  _IntPayloads:
+  - mIntVal: 132
+  - mIntVal: 132
+  - mIntVal: 141
+  - mIntVal: 150
+  - mIntVal: 141
+  - mIntVal: 132
+  - mIntVal: 123
+  - mIntVal: 114
+  - mIntVal: 132
+  - mIntVal: 141
+  - mIntVal: 132
+  - mIntVal: 132
+  - mIntVal: 132
+  - mIntVal: 132
+  - mIntVal: 132
+  _IntPayloadIdxs: 000000000100000002000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e000000
+  _SpectrumPayloads: []
+  _SpectrumPayloadIdxs: 
+  _TextPayloads: []
+  _TextPayloadIdxs: 

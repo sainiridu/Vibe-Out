@@ -110,8 +110,6 @@ MonoBehaviour:
     mEndSample: 1411018
   - mStartSample: 1432357
     mEndSample: 1432357
-  - mStartSample: 1453696
-    mEndSample: 1453696
   - mStartSample: 1531344
     mEndSample: 1531344
   - mStartSample: 1614792
@@ -126,14 +124,14 @@ MonoBehaviour:
     mEndSample: 1954440
   - mStartSample: 2045208
     mEndSample: 2045208
-  - mStartSample: 2119872
-    mEndSample: 2119872
   - mStartSample: 2209908
     mEndSample: 2209908
   - mStartSample: 2294088
     mEndSample: 2294088
   - mStartSample: 2379732
     mEndSample: 2379732
+  - mStartSample: 2586144
+    mEndSample: 2586144
   - mStartSample: 2798034
     mEndSample: 2798034
   - mStartSample: 2819373
@@ -328,36 +326,34 @@ MonoBehaviour:
     mEndSample: 6873728
   - mStartSample: 6916405
     mEndSample: 6916405
-  - mStartSample: 6980422
-    mEndSample: 6980422
-  - mStartSample: 7001760
-    mEndSample: 7001760
-  - mStartSample: 7023099
-    mEndSample: 7023099
-  - mStartSample: 7044438
-    mEndSample: 7044438
-  - mStartSample: 7065776
-    mEndSample: 7065776
-  - mStartSample: 7108454
-    mEndSample: 7108454
-  - mStartSample: 7129793
-    mEndSample: 7129793
-  - mStartSample: 7151131
-    mEndSample: 7151131
-  - mStartSample: 7172470
-    mEndSample: 7172470
-  - mStartSample: 7193809
-    mEndSample: 7193809
+  - mStartSample: 6969048
+    mEndSample: 6969048
+  - mStartSample: 6990386
+    mEndSample: 6990386
+  - mStartSample: 7011725
+    mEndSample: 7011725
+  - mStartSample: 7033064
+    mEndSample: 7033064
+  - mStartSample: 7115616
+    mEndSample: 7115616
+  - mStartSample: 7136955
+    mEndSample: 7136955
+  - mStartSample: 7158293
+    mEndSample: 7158293
+  - mStartSample: 7179632
+    mEndSample: 7179632
   - mStartSample: 7215147
     mEndSample: 7215147
   - mStartSample: 7257825
     mEndSample: 7257825
-  - mStartSample: 7321841
-    mEndSample: 7321841
-  - mStartSample: 7343180
-    mEndSample: 7343180
-  - mStartSample: 7364518
-    mEndSample: 7364518
+  - mStartSample: 7308312
+    mEndSample: 7308312
+  - mStartSample: 7329651
+    mEndSample: 7329651
+  - mStartSample: 7350989
+    mEndSample: 7350989
+  - mStartSample: 7372328
+    mEndSample: 7372328
   - mStartSample: 7385857
     mEndSample: 7385857
   - mStartSample: 7407196
@@ -370,24 +366,8 @@ MonoBehaviour:
     mEndSample: 7492551
   - mStartSample: 7513889
     mEndSample: 7513889
-  - mStartSample: 7535228
-    mEndSample: 7535228
-  - mStartSample: 7556567
-    mEndSample: 7556567
   - mStartSample: 7620583
     mEndSample: 7620583
-  - mStartSample: 7705938
-    mEndSample: 7705938
-  - mStartSample: 7791293
-    mEndSample: 7791293
-  - mStartSample: 7876647
-    mEndSample: 7876647
-  - mStartSample: 7962002
-    mEndSample: 7962002
-  - mStartSample: 8047357
-    mEndSample: 8047357
-  - mStartSample: 8132712
-    mEndSample: 8132712
   - mStartSample: 8900905
     mEndSample: 8900905
   - mStartSample: 8922244
@@ -526,7 +506,8 @@ MonoBehaviour:
     mEndSample: 11482884
   - mStartSample: 11610922
     mEndSample: 11610922
-  _SerializedPayloadTypes: []
+  _SerializedPayloadTypes:
+  - SonicBloom.Koreo.IntPayload
   _ColorPayloads: []
   _ColorPayloadIdxs: 
   _CurvePayloads: []
@@ -535,8 +516,11 @@ MonoBehaviour:
   _FloatPayloadIdxs: 
   _GradientPayloads: []
   _GradientPayloadIdxs: 
-  _IntPayloads: []
-  _IntPayloadIdxs: 
+  _IntPayloads:
+  - mIntVal: 0
+  - mIntVal: 0
+  - mIntVal: 0
+  _IntPayloadIdxs: 3a000000a4000000aa000000
   _SpectrumPayloads: []
   _SpectrumPayloadIdxs: 
   _TextPayloads: []
