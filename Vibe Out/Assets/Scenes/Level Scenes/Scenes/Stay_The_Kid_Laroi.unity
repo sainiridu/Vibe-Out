@@ -7498,6 +7498,7 @@ MonoBehaviour:
   countDown: {fileID: 944092191}
   startMusicAndSpawn: {fileID: 536453064}
   levelObjects: {fileID: 1278758540}
+  eventID: LevelEndTrack_StayTheKidLaroi
 --- !u!4 &1593032826
 Transform:
   m_ObjectHideFlags: 0
@@ -16971,7 +16972,7 @@ PrefabInstance:
     - target: {fileID: 6570837450374565282, guid: d04b7b9d3d1fffb44a4b9fe0065ae01a,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.36
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6570837450374565282, guid: d04b7b9d3d1fffb44a4b9fe0065ae01a,
         type: 3}

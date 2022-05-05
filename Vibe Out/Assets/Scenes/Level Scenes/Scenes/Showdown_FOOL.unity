@@ -4978,6 +4978,7 @@ MonoBehaviour:
   countDown: {fileID: 1070860082}
   startMusicAndSpawn: {fileID: 765843850}
   levelObjects: {fileID: 2033195040}
+  eventID: LevelEndTrack_ShowdownFOOL
 --- !u!4 &893618981
 Transform:
   m_ObjectHideFlags: 0
@@ -9361,6 +9362,30 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1245833533422576334, guid: d04b7b9d3d1fffb44a4b9fe0065ae01a,
+        type: 3}
+      propertyPath: m_Red_Particle_Prefab
+      value: 
+      objectReference: {fileID: 9098280287951426276, guid: d4284d05984a2474f91e62a139fac001,
+        type: 3}
+    - target: {fileID: 1245833533422576334, guid: d04b7b9d3d1fffb44a4b9fe0065ae01a,
+        type: 3}
+      propertyPath: m_Blue_Particle_Prefab
+      value: 
+      objectReference: {fileID: 2248541589426946665, guid: 8a506fcc7e21be147acf7b757fd6f59f,
+        type: 3}
+    - target: {fileID: 1267060976395009720, guid: d04b7b9d3d1fffb44a4b9fe0065ae01a,
+        type: 3}
+      propertyPath: m_Red_Particle_Prefab
+      value: 
+      objectReference: {fileID: 9098280287951426276, guid: d4284d05984a2474f91e62a139fac001,
+        type: 3}
+    - target: {fileID: 1267060976395009720, guid: d04b7b9d3d1fffb44a4b9fe0065ae01a,
+        type: 3}
+      propertyPath: m_Blue_Particle_Prefab
+      value: 
+      objectReference: {fileID: 2248541589426946665, guid: 8a506fcc7e21be147acf7b757fd6f59f,
+        type: 3}
     - target: {fileID: 6570837450374565282, guid: d04b7b9d3d1fffb44a4b9fe0065ae01a,
         type: 3}
       propertyPath: m_RootOrder

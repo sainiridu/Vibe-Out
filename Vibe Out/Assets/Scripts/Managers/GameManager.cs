@@ -1,5 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
+using SonicBloom.Koreo;
+using UnityEngine.SceneManagement;
 using UnityEngine;
 using TMPro;
 
@@ -9,6 +11,17 @@ public class GameManager : MonoBehaviour
     public GameObject startMusicAndSpawn;
 
     public GameObject levelObjects;
+    [EventID]
+    public string eventID;
+
+
+
+
+
+    void Awake()
+    {
+        Koreographer.Instance.RegisterForEvents(eventID, EndLevel);
+    }
 
     void Start()
     {
@@ -32,5 +45,10 @@ public class GameManager : MonoBehaviour
         yield return new WaitForSeconds(1f);
         countDown.transform.parent.gameObject.SetActive(false);
 
+    }
+
+    public void EndLevel(KoreographyEvent evt)
+    {
+        SceneManager.LoadScene(0);
     }
 }
