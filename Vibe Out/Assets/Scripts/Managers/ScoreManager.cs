@@ -41,18 +41,18 @@ public class ScoreManager : MonoBehaviour
 
     public void CorrectColorCube()
     {
-        StartCoroutine(scoreRatingUI.ShowScoreRating("GREAT", new Color32(0, 224, 116, 255)));
+        StartCoroutine(scoreRatingUI.ShowScoreRating("GREAT", new Color32(0, 224, 150, 255)));
         currentScore += 200;
     }
 
     public void WrongColorCube()
     {
-        StartCoroutine(scoreRatingUI.ShowScoreRating("HMMM....", new Color32(255, 130, 0, 255)));
+        StartCoroutine(scoreRatingUI.ShowScoreRating("WRONG COLOR", new Color32(255, 255, 255, 255)));
         currentScore += 50;
     }
     public void WrongDirectionHit()
     {
-        StartCoroutine(scoreRatingUI.ShowScoreRating("NOOB", new Color32(255, 252, 97, 255)));
+        StartCoroutine(scoreRatingUI.ShowScoreRating("TRY HARDER", new Color32(255, 252, 97, 255)));
         if (currentScore - 100 >= 0)
         {
             currentScore -= 100;
@@ -73,5 +73,18 @@ public class ScoreManager : MonoBehaviour
         {
             currentScore = 0;
         }
+    }
+
+
+
+    public void SetInt(string KeyName, int Value)
+    {
+        PlayerPrefs.SetInt(KeyName, Value);
+    }
+
+    public int Getint(string KeyName)
+    {
+        return PlayerPrefs.GetInt(KeyName, 0);
+
     }
 }

@@ -6089,7 +6089,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: -30, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -6.75, y: 5}
+  m_AnchoredPosition: {x: -6.75, y: 2.5}
   m_SizeDelta: {x: 2.75, y: 2.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1337114265
@@ -7495,6 +7495,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec02722fd6927054599236c2e91883f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  levelName: Stay_TheKidLaroi
   countDown: {fileID: 944092191}
   startMusicAndSpawn: {fileID: 536453064}
   levelObjects: {fileID: 1278758540}
@@ -7655,7 +7656,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 30, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 6.75, y: 5}
+  m_AnchoredPosition: {x: 6.75, y: 2.5}
   m_SizeDelta: {x: 2.75, y: 2.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!95 &1608522993
@@ -17018,6 +17019,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: XR Origin
+      objectReference: {fileID: 0}
+    - target: {fileID: 6570837450374565285, guid: d04b7b9d3d1fffb44a4b9fe0065ae01a,
+        type: 3}
+      propertyPath: m_CameraYOffset
+      value: 1.36144
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d04b7b9d3d1fffb44a4b9fe0065ae01a, type: 3}

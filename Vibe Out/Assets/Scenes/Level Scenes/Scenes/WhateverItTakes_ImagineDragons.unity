@@ -5782,6 +5782,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec02722fd6927054599236c2e91883f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  levelName: WhateverItTakes_ImagineDragons
   countDown: {fileID: 1780658746}
   startMusicAndSpawn: {fileID: 405668359}
   levelObjects: {fileID: 1291015749}
@@ -6755,7 +6756,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1291015750
 Transform:
   m_ObjectHideFlags: 0
@@ -14736,6 +14737,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: XR Origin
+      objectReference: {fileID: 0}
+    - target: {fileID: 6570837450374565285, guid: d04b7b9d3d1fffb44a4b9fe0065ae01a,
+        type: 3}
+      propertyPath: m_CameraYOffset
+      value: 1.36144
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d04b7b9d3d1fffb44a4b9fe0065ae01a, type: 3}

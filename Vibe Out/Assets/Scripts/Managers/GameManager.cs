@@ -7,12 +7,16 @@ using TMPro;
 
 public class GameManager : MonoBehaviour
 {
+    public string levelName;
     public TextMeshProUGUI countDown;
     public GameObject startMusicAndSpawn;
 
     public GameObject levelObjects;
+
     [EventID]
     public string eventID;
+
+    private ScoreManager scoreManager;
 
 
 
@@ -21,6 +25,7 @@ public class GameManager : MonoBehaviour
     void Awake()
     {
         Koreographer.Instance.RegisterForEvents(eventID, EndLevel);
+        scoreManager = FindObjectOfType<ScoreManager>();
     }
 
     void Start()
@@ -36,7 +41,6 @@ public class GameManager : MonoBehaviour
         yield return new WaitForSeconds(1f);
         countDown.text = "1";
 
-
         yield return new WaitForSeconds(1f);
         levelObjects.SetActive(true);
         startMusicAndSpawn.SetActive(true);
@@ -49,6 +53,7 @@ public class GameManager : MonoBehaviour
 
     public void EndLevel(KoreographyEvent evt)
     {
+        scoreManager.SetInt(levelName, scoreManager.currentScore);    
         SceneManager.LoadScene(0);
     }
 }
